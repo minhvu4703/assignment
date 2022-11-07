@@ -33,14 +33,14 @@ html {
 
 /* ID */
 
-#box1 {
+#header {
     width: 5em;
     height: 5em;
     background-color: cyan;
     float: left;
 }
 
-#box2 {
+#menu {
     width: 5rem;
     /* 5 x 16 = 80px */
     height: 5rem;
