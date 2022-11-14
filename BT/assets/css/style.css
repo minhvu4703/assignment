@@ -1,0 +1,71 @@
+table,
+th,
+tr,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+* {
+    /* nargin: 0;
+    padding: 0;
+    */
+}
+
+#header {
+    width: inherit;
+    margin: 50px;
+    text-transform: uppercase;
+}
+
+#container {
+    width: 800px;
+    margin: 20px;
+}
+
+#logo {
+    width: 30px;
+    height: inherit;
+    background-color: yellow;
+    float: left;
+}
+
+#header-content {
+    width: 70px;
+    height: inherit;
+    background-color: aquamarine;
+    float: right;
+}
+
+.clear-fix {
+    clear: both;
+}
+
+.main {
+    height: 300px;
+    width: inherit;
+    background-color: aqua;
+    line-height: 300px;
+}
+
+.sidebar {
+    height: inherit;
+    width: 30%;
+    background-color: bisque;
+    float: left;
+}
+
+.content {
+    height: inherit;
+    width: 70%;
+    background-color: lightblue;
+    float: right;
+}
+
+.footer {
+    width: inherit;
+    height: 40px;
+    background-color: yellow;
+    line-height: 40px;
+}
