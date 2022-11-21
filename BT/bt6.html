@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bt6</title>
+    <link rel="stylesheet" href="assets/css/bt6.css">
+</head>
+
+<body>
+    <div id="container">
+        <div class="form-control">
+            <label for="" :>Username</label>
+            <br>
+            <input type="text" name="username" id="username" value="">
+        </div>
+
+        <div class="form-control">
+            <label for="" :>Password</label>
+            <br>
+            <input type="text" name="password" id="password" value="">
+        </div>
+
+        <div class="form-control">
+            <label for="" :>Re-password</label>
+            <br>
+            <input type="text" name="re_password" id="re_password" value="">
+        </div>
+
+    </div>
+    <div class="operator">
+        <div class="item" id="register" onclick="abc(this)">Register</div>
+    </div>
+    </div>
+    <script>
+        function abc(x) {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+            var re_password = document.getElementById("re_password").value;
+            var check = true;
+            if (username == "") {
+                alert("Bạn phải nhập username");
+                check = false;
+            }
+            if (password == "") {
+                alert("Bạn phải password");
+                check = false;
+            }
+            if (re_password == "") {
+                alert("Bạn phải Re-password");
+                check = false;
+            }
+        }
+    </script>
+</body>
+
+</html>

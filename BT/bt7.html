@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BT7</title>
+    <link rel="stylesheet" href="assets/css/bt7.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>BKACAD</h1>
+        <span class="errorInputMessage" id="loginError">Tên đăng nhập hoặc mật khẩu không đúng</span>
+        <form action="home.html" name="loginForm" method="get" onsubmit="return validateForm()" ;>
+            <table>
+                <tr>
+                    <td style="width: 100px;">Username: </td>
+                    <td>
+                        <input type="text" name="username" id="username" value="">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="tdError">
+                        <span class="errorInputMessage" id="usernaneError">Username không được để trống</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Password: </td>
+                    <td>
+                        <input type="text" name="password" id="password" value="">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="tdError">
+                        <span class="errorInputMessage" id="passwordError">Mật Khẩu không được để trống</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" value="Login" id="btnLogin">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <script src="BT/js/bt7.js"></script>
+</body>
+
+</html>

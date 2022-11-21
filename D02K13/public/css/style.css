@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+#container {
+    width: 800px;
+    margin: 20px auto;
+    text-transform: uppercase;
+    text-align: center;
+}
+/*Header css*/
+#header {
+    width: inherit;
+    height: 50px;
+    line-height: 50px;
+}
+
+#logo {
+   width: 30%;
+   height: inherit;
+   background-color: yellow;
+   float: left;
+}
+
+#header-content {
+   width: 70%;
+   height: inherit;
+   background-color: aquamarine;
+   float: right;
+}
+.clear-fix {
+    clear: both;
+}
+/*Menu css*/
+#menu {
+   height: 30px;
+   width: inherit;
+   background-color: orange;
+   line-height: 30px;
+}
+
+/*Main css*/
+.main {
+    height: 300px;
+    width: inherit;
+    line-height: 300px;
+}
+
+.sidebar {
+    height: inherit;
+    width: 30%;
+    background-color: bisque;
+    float: left;
+}
+
+.content {
+    height: inherit;
+    width: 70%;
+    background-color: lightskyblue;
+    float: right;
+}
+
+#footer {
+    width: inherit;
+    height: 40px;
+    background-color: yellow;
+    line-height: 40px;
+}

@@ -1,0 +1,23 @@
+#container {
+    width: 350px;
+    height: 500px;
+    margin: 20px auto;
+    background-color: gray;
+}
+
+.form-control {
+    margin-bottom: 20px;
+}
+
+.form-control:last-child {
+    margin-bottom: 0;
+}
+
+.operator .item {
+    display: inline-block;
+    padding: 8px;
+    border: 1px solid;
+    background-color: rgb(0, 162, 255);
+    color: white;
+    text-align: center;
+}
