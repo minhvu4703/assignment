@@ -10,50 +10,55 @@
 </head>
 
 <body>
-    <div id="container">
-        <div class="form-control">
-            <label for="" :>Username</label>
-            <br>
-            <input type="text" name="username" id="username" value="">
-        </div>
-
-        <div class="form-control">
-            <label for="" :>Password</label>
-            <br>
-            <input type="text" name="password" id="password" value="">
-        </div>
-
-        <div class="form-control">
-            <label for="" :>Re-password</label>
-            <br>
-            <input type="text" name="re_password" id="re_password" value="">
-        </div>
-
+    <div class="container">
+        <h1>BKACAD</h1>
+        <span class="errorInputMessage" id="registerError">Tên đăng nhập hoặc mật khẩu không hợp lệ</span>
+        <form action="bt7.html" name="registerForm" method="get" onsubmit="return validateForm();">
+            <table>
+                <!-- tạo user name -->
+                <tr>
+                    <td style="width: 100px;"><b>Username: </b></td>
+                    <td>
+                        <input type="text" name="username" id="username" value="" placeholder="Username...">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="tdError">
+                        <span class="errorInputMessage" id="usernameError">Tên đăng nhập không được để trống.</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>Password:</b> </td>
+                    <td>
+                        <input type="text" name="password" id="password" value="" placeholder="Password...">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="tdError">
+                        <span class="errorInputMessage" id="passwordError">Mật khẩu không được để trống.</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>Re-password:</b> </td>
+                    <td>
+                        <input type="text" name="re_password" id="re_password" value="" placeholder="Re-password...">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="tdError">
+                        <span class="errorInputMessage" id="re_passwordError">Nhập lại mật khẩu không được để trống.</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" value="Register" id="btnRegister">
+                    </td>
+                </tr>
+            </table>
+        </form>
     </div>
-    <div class="operator">
-        <div class="item" id="register" onclick="abc(this)">Register</div>
-    </div>
-    </div>
-    <script>
-        function abc(x) {
-            var username = document.getElementById("username").value;
-            var password = document.getElementById("password").value;
-            var re_password = document.getElementById("re_password").value;
-            var check = true;
-            if (username == "") {
-                alert("Bạn phải nhập username");
-                check = false;
-            }
-            if (password == "") {
-                alert("Bạn phải password");
-                check = false;
-            }
-            if (re_password == "") {
-                alert("Bạn phải Re-password");
-                check = false;
-            }
-        }
-    </script>
+
+    <script src="assets/js/bt6.js"></script>
 </body>
 
 </html>
